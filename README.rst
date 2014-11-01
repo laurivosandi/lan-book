@@ -1,5 +1,4 @@
 .. author: Lauri Võsandi <lauri.vosandi@gmail.com>
-.. tags: hidden
 
 Koolituse läbiviijale
 =====================

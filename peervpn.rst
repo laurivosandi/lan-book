@@ -23,8 +23,9 @@ Topology
 
 Current configuration example is based on following network topology:
 
-.. image:: /shared/diagrams/peervpn-topoloogia.png
-    :align: center
+.. figure:: img/peervpn-topoloogia.png
+
+    My PeerVPN topology
 
 The constraints are following:
 

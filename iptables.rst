@@ -49,7 +49,7 @@ Harjutused:
 * Seame kiirusepiirangud sisevõrgus paiknevale masinale
 * Grupitööna püüame sisse murda üksteise masinatesse turvamata võrgus
 
-Koolituse loogiliseks järjeks on `virtuaalprivaatvõrkude </bootcamp/openvpn/>`_ koolitus
+Koolituse loogiliseks järjeks on `virtuaalprivaatvõrkude <virtual-private-network.html>`_ koolitus
 
 Õppematerjalid saavad olema kättesaadavad siinsamas veebis 
 `Creative Commons Attribution 3.0 <http://creativecommons.org/licenses/by/3.0/>`_ litsentsi all.

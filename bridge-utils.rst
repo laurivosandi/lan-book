@@ -12,10 +12,9 @@ kommutaatorisse (*switch*). Sild ise on samas ka virtuaalne võrguliides mis on 
 ühendatud samasse virtuaalsesse kommutaatorisse. Füüsilised võrguliidesed,
 mis on silda liidetud on ilma IP-aadressita.
 
-.. image:: img/bridge-utils.png
-    :width: 600px
-    :height: 333px
-    :align: center
+.. figure:: img/bridge-utils.svg
+
+    Võrguliideste sildamine
 
 Käesolevas näites on marsruuteris kolm füüsilist võrguliidest:
 
@@ -96,7 +95,7 @@ tuleks sillaga seotud võrguliideste kohta vastavad sissekanded teha
 
 Nii olemegi seadistanud silla, mis ühendab marsruuteri läbi *br0* liidese, 
 juhtmega võrgu läbi *eth1* liidese ning juhtmeta võrgu läbi *wlan0* liidese.
-Siit võib edasi minna `DHCP serveri seadistamise </bootcamp/dnsmasq>`_ juurde,
+Siit võib edasi minna `DHCP serveri seadistamise <dnsmasq.html>`_ juurde,
 ainus erinevus on see, et DHCP server peab kuulama võrguliidesel *br0*.
-`Maskeraadi tegemisel </bootcamp/iptables-masquerade>`_ on erinevus analoogne, pakette vahendatakse
+`Maskeraadi tegemisel <iptables-masquerade.html>`_ on erinevus analoogne, pakette vahendatakse
 võrguliideselt *br0* võrguliidesele *eth0*.

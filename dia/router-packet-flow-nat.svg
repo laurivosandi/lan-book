@@ -79,8 +79,10 @@ Routing decision</text>
 Routing decision</text>
 <rect x="1.000" y="1.000" width="12.000" height="4.000" fill="#FFFFFF" stroke="none" stroke-width="0"/>
 <rect x="1.000" y="1.000" width="12.000" height="4.000" fill="none" stroke="#000000" stroke-width="0.100" />
-<text x="7.000" y="3.195"  fill="#000000" text-anchor="middle" font-size="0.80" font-family="sans" font-style="normal" font-weight="400">
+<text x="7.000" y="2.795"  fill="#000000" text-anchor="middle" font-size="0.80" font-family="sans" font-style="normal" font-weight="400">
 PREROUTING</text>
+<text x="7.000" y="3.595"  fill="#000000" text-anchor="middle" font-size="0.80" font-family="sans" font-style="normal" font-weight="400">
+-t mangle -j MARK</text>
 <rect x="43.000" y="1.000" width="12.000" height="4.000" fill="#FFFFFF" stroke="none" stroke-width="0"/>
 <rect x="43.000" y="1.000" width="12.000" height="4.000" fill="none" stroke="#000000" stroke-width="0.100" />
 <text x="49.000" y="2.395"  fill="#000000" text-anchor="middle" font-size="0.80" font-family="sans" font-style="normal" font-weight="400">
@@ -88,7 +90,7 @@ POSTROUTING</text>
 <text x="49.000" y="3.195"  fill="#000000" text-anchor="middle" font-size="0.80" font-family="sans" font-style="normal" font-weight="400">
 -t nat -j MASQUEARADE</text>
 <text x="49.000" y="3.995"  fill="#000000" text-anchor="middle" font-size="0.80" font-family="sans" font-style="normal" font-weight="400">
--t mangle</text>
+-t mangle -j CLASSIFY</text>
 <rect x="15.000" y="13.000" width="12.000" height="4.000" fill="#FFFFFF" stroke="none" stroke-width="0"/>
 <rect x="15.000" y="13.000" width="12.000" height="4.000" fill="none" stroke="#000000" stroke-width="0.100" />
 <text x="21.000" y="14.395"  fill="#000000" text-anchor="middle" font-size="0.80" font-family="sans" font-style="normal" font-weight="400">
@@ -96,7 +98,7 @@ POSTROUTING</text>
 <text x="21.000" y="15.195"  fill="#000000" text-anchor="middle" font-size="0.80" font-family="sans" font-style="normal" font-weight="400">
 -t nat -j SNAT</text>
 <text x="21.000" y="15.995"  fill="#000000" text-anchor="middle" font-size="0.80" font-family="sans" font-style="normal" font-weight="400">
--t mangle</text>
+-t mangle -j CLASSIFY</text>
 <rect x="29.000" y="1.000" width="12.000" height="4.000" fill="#FFFFFF" stroke="none" stroke-width="0"/>
 <rect x="29.000" y="1.000" width="12.000" height="4.000" fill="none" stroke="#000000" stroke-width="0.100" />
 <text x="35.000" y="2.395"  fill="#000000" text-anchor="middle" font-size="0.80" font-family="sans" font-style="normal" font-weight="400">
@@ -104,7 +106,7 @@ FORWARD</text>
 <text x="35.000" y="3.195"  fill="#000000" text-anchor="middle" font-size="0.80" font-family="sans" font-style="normal" font-weight="400">
 -t filter</text>
 <text x="35.000" y="3.995"  fill="#000000" text-anchor="middle" font-size="0.80" font-family="sans" font-style="normal" font-weight="400">
--t mangle</text>
+-t mangle -j CLASSIFY</text>
 <line x1="27.050" y1="3.033" x2="28.463" y2="3.027" stroke="#000000" stroke-width="0.100" />
 <polygon fill="#000000" stroke="none" stroke-width="0.100" points="28.838,3.025 28.339,3.277 28.463,3.027 28.337,2.777 "/>
 <polygon fill="none" stroke="#000000" stroke-width="0.100"  points="28.838,3.025 28.339,3.277 28.463,3.027 28.337,2.777 "/>
@@ -122,7 +124,7 @@ PREROUTING</text>
 <text x="63.000" y="15.195"  fill="#000000" text-anchor="middle" font-size="0.80" font-family="sans" font-style="normal" font-weight="400">
 -t nat -j DNAT</text>
 <text x="63.000" y="15.995"  fill="#000000" text-anchor="middle" font-size="0.80" font-family="sans" font-style="normal" font-weight="400">
--t mangle</text>
+-t mangle -j MARK</text>
 <rect x="29.000" y="13.000" width="12.000" height="4.000" fill="#FFFFFF" stroke="none" stroke-width="0"/>
 <rect x="29.000" y="13.000" width="12.000" height="4.000" fill="none" stroke="#000000" stroke-width="0.100" />
 <text x="35.000" y="14.395"  fill="#000000" text-anchor="middle" font-size="0.80" font-family="sans" font-style="normal" font-weight="400">
@@ -130,7 +132,7 @@ FORWARD</text>
 <text x="35.000" y="15.195"  fill="#000000" text-anchor="middle" font-size="0.80" font-family="sans" font-style="normal" font-weight="400">
 -t filter</text>
 <text x="35.000" y="15.995"  fill="#000000" text-anchor="middle" font-size="0.80" font-family="sans" font-style="normal" font-weight="400">
--t mangle</text>
+-t mangle -j CLASSIFY</text>
 <rect x="1.000" y="13.000" width="12.000" height="4.000" fill="#FFFFFF" stroke="none" stroke-width="0"/>
 <rect x="1.000" y="13.000" width="12.000" height="4.000" fill="none" stroke="#000000" stroke-width="0.100" />
 <text x="7.000" y="15.195"  fill="#000000" text-anchor="middle" font-size="0.80" font-family="sans" font-style="normal" font-weight="400">

@@ -8,7 +8,7 @@ Staatiline IP-aadress
 =====================
 
 Nüüd kui teame,
-`mis võrguliidesed meie arvutis on </bootcamp/iproute2-introduction>`_,
+`mis võrguliidesed meie arvutis on <iproute2-introduction.html>`_,
 mis IP-aadressid neil on ning mis alamvõrkudes meie masin suhtleb,
 võime edasi liikuda nende võrguliideste
 seadistamise juurde.

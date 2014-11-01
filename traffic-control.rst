@@ -5,6 +5,9 @@
 Liikluse kujundamine
 ====================
 
+Sissejuhatus
+------------
+
 Tihtipeale tekib vajadus seada piiranguid võrgus, selleks et üks
 kasutaja kogu ressursse omale ei võtaks. Kõige labasemas näites
 üks kasutajatest käitab BitTorrent-it oma masinas. BitTorrent
@@ -34,16 +37,22 @@ Täiendavalt võiks pakette prioritiseerida protokolli järgi,
 eelisjärjekorras läbi lasta reaalajarakendused nagu OpenSSH ning mängud,
 peale seda veeb ning viimasena kõik üleliigne nagu BitTorrent.
 
+Võrguliikluse kujundamine
+-------------------------
+
 Kokkuvõtvalt liikluse kujundamine koosneb:
 
 * Ühenduste arvu (*connection* *count*) piiramisest
 * Ribalaiuse (*bandwidth*) piiramisest
 * Protokollide prioritiseerimisest
 
-Reaalseld mõõdetavad attribuudid mille järgi võrgu jõudlust mõõta:
+Reaalseld mõõdetavad attribuudid mille järgi võrgu jõudlust mõõta on kaks:
+latentsus ehk aeg mis kulub võrgurakendusel päringu tegemisest vastuse saamiseni ning
+läbilaskevõime ehk allalaadimis- ning üleslaadimiskiirus.
 
-* Latentsus ehk aeg mis kulub võrgurakendusel päringu tegemisest vastuse saamiseni
-* Läbilaskevõime ehk allalaadimis- ning üleslaadimiskiirus
+
+Ühenduste arvu piiramine
+------------------------
 
 Kohalikule võrgurakendusele sissetulevaid ühendusi saab
 piirata *connlimit* mooduli abil.
@@ -70,11 +79,13 @@ Analoogselt peaks saama piirata sisevõrgust Internetti minevate ühenduste arvu
         -m connlimit --connlimit-above 50 \
         -j REJECT --reject-with tcp-reset
         
+        
 Queuing discipline
 ------------------
 
 Keerukamate stsenaariumite puhul tuleks kasutada *tc* käsku, et tuumale ette 
-sööta pakettide järjekorrastaja. Käsk *ip* *link* *list* näitab ära, 
+sööta pakettide järjekorrastaja [#traffic-control]_.
+Käsk *ip* *link* *list* näitab ära,
 mis *qdisc* (*queuing* *discipline*) ehk pakettide järjestamise kord kehtib võrguliidesel:
 
 * *noqueue* - Pakette ei järjestata ega puhverdata
@@ -148,7 +159,4 @@ Pakettide liikumist erinevates klassides saab jälgida *tc* abil:
 
     watch --interval=0.1 tc -s class show dev eth1
 
-Harjutused kasutades Debian või Ubuntu virtuaalmasinaid:
-
-* Piira veebiserveri ühenduste arvu kliendi kohta
-* Piira ühenduste arvu kohtvõrgu masina kohta
+.. [#traffic-control] `Traffic Control HOWTO <http://tldp.org/HOWTO/Traffic-Control-HOWTO/>`_

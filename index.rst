@@ -21,15 +21,17 @@ OpenVPN-i TAP-režiimi abil ning ka pordi edasisuunamist OpenSSH abil.
 Erinevates vahendites kasutatava krüptograafilise võimekuse võtab kokku
 OpenSSL.
 
-Õppematerjalid kättesaadavad siinsamas veebis Creative Commons Attribution 3.0 [#cc]_ litsentsi all.
+Õppematerjalid kättesaadavad siinsamas veebis [#lanweb]_
+Creative Commons Attribution 3.0 [#cc]_ litsentsi all.
 Materjalid valmisid Euroopa Struktuurifondide toel
 "Praktiline küberkaitse IT süsteemide administraatoritele" projekti raames [#esf]_.
 Koolituse läbi viimiseks on juhend saadaval [#readme]_ käesoleva materjali
 täiendamine on teretulnud Github vahendusel [#lanbook]_.
 
+.. [#lanweb]  http://lauri.vosandi.com/lan/
 .. [#cc]      http://creativecommons.org/licenses/by/3.0/
 .. [#esf]     http://www.itcollege.ee/koostoo/projektid/projektid/kuberkaitse/
-.. [#readme]  `Koolitaja juhend <README.html>`_
+.. [#readme]  `Koolitaja juhend <readme.html>`_
 .. [#lanbook] http://github.com/v6sa/lan-book/
 
 
@@ -42,7 +44,7 @@ kohtvõrku ning vastupidi.
 Ubuntupõhine veebiserver (*web* *server*) teenindab võrgurakenduse kasutajaid.
 Kommutaator (*switch*) vahendab pakette kohtvõrgu masinate vahel:
 
-.. figure:: netfilter/dia/topology-basic.svg
+.. figure:: dia/topology-basic.svg
     :width: 60%
 
     Minimaalne võrgu topoloogia
@@ -73,7 +75,7 @@ Enne OpenVPN tunnelite seadistamist tuleks käima saada:
 
 Abiks on järgmine lugemismaterjal:
 
-* `Võrguteenused <network-services.html>`_ ehk OSI mudel
+* `Võrguteenused <osi-model.html>`_ ehk OSI mudel
 * `iproute2 <iproute2-introduction.html>`_ ehk Linux-i võrguliideste seadistamine.
 * Masinale `staatilise IP-aadressi <iproute2-static-ip.html>`_ seadistamine.
 * Masinale `dünaamilise IP-aadressi <dhcp-client.html>`_ seadistamine.
@@ -86,16 +88,16 @@ Kerneli koosseisu kuuluva osa nimeks on netfilter ning
 Käsurearakendiks on iptables mis manipuleerib kerneli käsutuses olevaid reegleid.
 Käesoleva materjali valimimisel olid abiks mitmed materjalid. [#kuutorvaja]_ [#lartc]_
 
-* `netfilter/iptables <netfilter/>`_ ehk Linuxi tulemüür
-* `iptables <netfilter/iptables-introduction.html>`_ ehk *layer3* tulemüür
-* `Maskeraad <netfilter/iptables-masquerade.html>`_ ehk interneti jagamine
-* `Kohalike rakenduste turvamine <netfilter/iptables-local-applications.html>`_
-* `Teenuste ümbersuunamine <netfilter/iptables-port-redirection.html>`_
-* `Minimaalne marsruuteri tulemüür </paste/minimal-router-firewall.sh>`_
-* `Pakettide markeerimine <netfilter/iptables-mark.html>`_
-* `Kasutaja defineeritud tulemüüri ahelad <netfilter/iptables-user-defined-chain.html>`_
-* `ebtables <netfilter/ebtables.html>`_ ehk *layer2* tulemüür
+* `iptables <iptables-introduction.html>`_ ehk *layer3* tulemüür
+* `Maskeraad <iptables-masquerade.html>`_ ehk interneti jagamine
+* `Kohalike rakenduste turvamine <iptables-local-applications.html>`_
+* `Teenuste ümbersuunamine <iptables-port-redirection.html>`_
+* `Pakettide markeerimine <iptables-mark.html>`_
+* `Kasutaja defineeritud tulemüüri ahelad <iptables-user-defined-chain.html>`_
+* `ebtables <ebtables.html>`_ ehk *layer2* tulemüür
 * `Üldine loogika <https://www.dropbox.com/s/qu3ds44704nsw2n/2013-08-27%2011.57.46.jpg>`_
+
+.. comment: * `Minimaalne marsruuteri tulemüür </paste/minimal-router-firewall.sh>`_
 
 .. [#kuutorvaja] `iptables puust ja punaseks <http://kuutorvaja.eenet.ee/wiki/Iptables_puust_ja_punaseks>`_
 .. [#lartc] `Linux Advanced Routing & Traffic Control <http://www.lartc.org/>`_
@@ -107,7 +109,7 @@ Site-to-site tunnel
 Kui sisevõrk toimib on aeg seadistada OpenVPN tunnel kahe marsruuteri vahele
 nii et kahe sisevõrgu vaheline liiklus liigub läbi krüpteeritud tunneli:
 
-.. figure:: netfilter/dia/topology-site-to-site.svg
+.. figure:: dia/topology-site-to-site.svg
 
     Järgmine samm topoloogia arenduses
     
@@ -125,7 +127,7 @@ Sülearvutite ühendamine
 Järgmine samm on seadistada teine OpenVPN-i instants pakkuma rändlusteenust
 sülearvutitele ning paika panna kiirusepiirangud:
     
-.. figure:: netfilter/dia/topology-laptops.svg
+.. figure:: dia/topology-laptops.svg
 
     Kõik töötab!
     
@@ -133,16 +135,17 @@ Abiks on jällegi mõned lingid:
 
 * `Sülearvutite ühendamine <openvpn-easyrsa.html>`_ virtuaalprivaatvõrku kasutades OpenVPN-i ning avalik/privaatne võtmepaare.
 * `TAP-režiimis OpenVPN-i ja füüsilise võrguliidese sildamine <http://www.serverubuntu.it/openvpn-bridge-configuration>`_.
-* `Kõik ühes OpenVPN konfiguratsioonifail </paste/inline-keys.ovpn>`_.
 * Mitme masina ja alamvõrgu ühendamine `PeerVPN <peervpn.html>`_ abil.
-* `tc <traffic-control.html>`_ ehk võrguliikluse kujundamine [#traffic-control]_
+* `tc <traffic-control.html>`_ ehk võrguliikluse kujundamine.
+
+.. comment: * `Kõik ühes OpenVPN konfiguratsioonifail </paste/inline-keys.ovpn>`_.
 
 Kokkuvõte
 ---------
 
 Koolitusel käsitletud marsruutimise ja kiiruse piiramise teemad võtab kokku järgnev joonis:
 
-.. figure:: netfilter/dia/router-packet-flow-nat.svg
+.. figure:: dia/router-packet-flow-nat.svg
 
     Pakettide töötlemine marsruuteris
 
@@ -150,12 +153,11 @@ Koolitusel käsitletud marsruutimise ja kiiruse piiramise teemad võtab kokku j�
 Misc
 ----
 
-* `Näide #1 </paste/firewall.sh>`_
-* `Näide #2 </paste/firewall2.sh>`_
+.. comment: * `Näide #1 </paste/firewall.sh>`_
+.. comment: * `Näide #2 </paste/firewall2.sh>`_
 * `hostapd <hostapd.html>`_ ehk juhtmeta kuumpunkti rajamine
 * `bridge-utils <bridge-utils.html>`_ ehk võrguliideste sildamine
 * `nmap <nmap.html>`_ ehk võrgu skanneerimine
 * `Packet flow <http://blog.schaal-24.de/wp-content/uploads/2013/08/2683-PacketFlow.png>`_
 * `iproute commands <http://jazstudios.blogspot.com/2007/04/iproute-commands.html>`_
 
-.. [#traffic-control] `Traffic Control HOWTO <http://tldp.org/HOWTO/Traffic-Control-HOWTO/>`_
