@@ -11,7 +11,7 @@ selgeks teha mis kihtidel üks või teine võrguteenus opereerib.
 Kõige värvikamalt kirjeldab seda *avatud* *süsteemide* *sidumise* *arhitektuur* ehk
 OSI mudel:
 
-.. image:: img/osi-model.svg
+.. figure:: img/osi-model.svg
 
 OSI mudelis eristatakse erinevaid addresseerimismeetodeid:
 

@@ -1,11 +1,10 @@
-.. title: Staatiline IP-aadress
 .. author: Lauri Võsandi <lauri.vosandi@gmail.com>
 .. license: cc-by-3
 .. tags:  iptables, IP, Internet Protocol
 .. date: 2013-10-31
 
-Staatiline IP-aadress
-=====================
+Võrguliidesele staatilise IP-aadressi seadistamine
+==================================================
 
 Nüüd kui teame,
 `mis võrguliidesed meie arvutis on <iproute2-introduction.html>`_,

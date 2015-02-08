@@ -1,10 +1,9 @@
-.. title: iproute2
 .. author: Lauri Võsandi <lauri.vosandi@gmail.com>
 .. tags:  iproute2, ifconfig
 .. date: 2013-10-31
 
-iproute2
-========
+Võrguliideste seadistamine iproute2 abil
+========================================
 
 Olles mananud ette käsurea, saab modernses Linux tuumaga masinas
 manipuleerida võrguseadistusi *iproute2* tarkvara abil. Teemade skoop, mida

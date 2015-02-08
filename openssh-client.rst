@@ -1,18 +1,18 @@
-.. title: OpenSSH klient
 .. author: Lauri Võsandi <lauri.vosandi@gmail.com>
-.. tags: 
 .. date: 2013-10-31
 
+OpenSSH klient
+==============
 
 OpenSSH on võrgurakendus ning samas ka võrguprotokoll, mis võimaldab üle 
 võrgu saada ligipääsu kaugmasina käsureale kui ka failidele.
 
-.. image:: http://www.liberiangeek.net/wp-content/uploads/2013/04/network_sharing_ubuntu_windows_thumb.png
+.. figure:: http://www.liberiangeek.net/wp-content/uploads/2013/04/network_sharing_ubuntu_windows_thumb.png
 
 OpenSSH on integreeritud Ubuntu töölauda läbi GNOME virtuaalfailisüsteemi,
 mis tähendab et Nautilus faililehitsejaga saab kaugmasina faile lehitseda:
 
-.. image:: http://www.memset.com/media/medialibrary/2011/08/container-access.png
+.. figure:: http://www.memset.com/media/medialibrary/2011/08/container-access.png
 
 Ka paljud muud graafilised programmid, nt *gedit* jms toetavad sama aadressikuju
 *sftp://lvosandi@enos.itcollege.ee/home/lvosandi*.
@@ -24,15 +24,6 @@ haakepunktid kättesaadavad */run/user/kohaliku_kasutajanimi/gvfs/* all:
 .. code::
 
     lauri@lauri-t420 /run/user/lauri/gvfs/sftp:host=enos.itcollege.ee,user=lvosandi/home/lvosandi $ ls
-    2riplaan_v6sax.html    biz.html     eee.odp		i202		jura		   loogika_aeg-1.xls  NX Client for Windows  public_html.tar  uus
-    alu.epb		       bitchx.sh    erasmus		i202b		kaka		   Mallid	      pages		     pulss	      vana
-    antti		       booze	    export		i202c		katse		   mata		      pask		     rss.xml	      whatnot.php
-    antti2		       bs	    fibo.py		images		katse.htm	   matastat	      pic1.bmp		     scrollz.sh       Videod
-    arhiveeri.bat	       cisco.txt    files		index.html	katse.py	   moo2.txt	      pic2.bmp		     server	      viki
-    ariplaan_v6sax.html    _config.php  fix_encoding.patch	infot88tlus	kuhuiganes	   moo3.txt	      Pildid		     style.css	      workspace
-    ariplaan_v6sax.html~   COPYING	    fyysika.pdf		info.txt	lauri_vosandi.xls  moo.txt	      plugins		     template.html    ylesanne1.ods
-    arvutid3.epb	       Desktop	    harjutus123.java	java		local.cshrc	   Muusika	      pomm.pl		     Töölaud	      ylesanne1.xls
-    arvutid_harjutus1.epb  Dokumendid   hinded.py		java_algkursus	local.login	   New Folder	      projekt1		     ubuntu	      ylesanne4
     Avalik		       dot	    history		java.html	local.profile	   nk.sh	      public_html	     usr
     lauri@lauri-t420 /run/user/lauri/gvfs/sftp:host=enos.itcollege.ee,user=lvosandi/home/lvosandi $ 
 

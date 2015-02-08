@@ -1,11 +1,9 @@
-.. title: dnsmasq
 .. author: Lauri Võsandi <lauri.vosandi@gmail.com>
-.. license:: cc-by-3
 .. tags: dnsmasq
 .. date: 2013-10-31
 
-dnsmasq
-=======
+Kohtvõrgu jaoks DHCP ja DNS puhvri seadistamine dnsmasq abil
+============================================================
 
 Sissejuhatus
 ------------

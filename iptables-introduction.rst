@@ -8,10 +8,9 @@ iptables
 
 Visuaalselt ning lihtsustatult on *netfilter* ehk Linux-i tulemüür üles ehitatud ahelatest [#packet-flow]_:
 
-.. image:: img/iptables-chains.svg
-    :width: 600px
-    :height: 550px
-    :align: center
+.. figure:: img/iptables-chains.svg
+
+    Ahelad netfilter/iptables koosluses
 
 Võrgust arvuti suvalisele võrguliidesele saabunud pakett läbib
 marsruutimiseelse (*prerouting*) ahela,

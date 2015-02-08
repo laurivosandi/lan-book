@@ -1,8 +1,10 @@
-.. title: nmap
 .. author: Lauri Võsandi <lauri.vosandi@gmail.com>
 .. license: cc-by-3
 .. tags: nmap, security
 .. date: 2014-04-17
+
+nmap
+====
 
 *Network Mapper* on turvaskanner mida kasutatakse masinate ning nendes
 käitatavate teenuste avastamiseks võrgus.

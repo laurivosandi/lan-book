@@ -1,10 +1,9 @@
-.. title: DHCP klient
 .. author: Lauri Võsandi <lauri.vosandi@gmail.com>
 .. tags: 
 .. date: 2013-10-31
 
-DHCP klient
-===========
+IP-aadressi küsimine ISC DHCP kliendi abil
+==========================================
 
 Arvutitele IP aadresside jagamine käib DHCP ehk
 dünaamilise hostikonfiguratsiooni protokolli

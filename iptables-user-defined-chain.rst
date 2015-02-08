@@ -1,7 +1,8 @@
-.. title: Kasutaja defineeritud ahelad
 .. author: Lauri Võsandi <lauri.vosandi@gmail.com>
-.. tags: 
 .. date: 2013-10-31
+
+Kasutaja defineeritud ahelad
+============================
 
 Ise saab luua filtreerimistabelitega (*filter*) ahelaid mida saab määrata sisse-ehitatud
 ahelate sihtmärkideks (*target*):

@@ -1,8 +1,10 @@
-.. title: Tulemüürid
 .. author: Lauri Võsandi <lauri.vosandi@gmail.com>
 .. license: cc-by-3
 .. tags:  iptables, firewall, tulemüür
 .. date: 2013-10-31
+
+Tulemüürid
+==========
 
 Käesolev kursus käsitleb tulemüüride seadistamist
 Linux-põhistes operatsioonisüsteemides (Ubuntu, Debian, jms)

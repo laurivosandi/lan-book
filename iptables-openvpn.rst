@@ -1,7 +1,9 @@
-.. title: Tulemüürid ja virtuaalprivaatvõrgud
 .. author: Lauri Võsandi <lauri.vosandi@gmail.com>
 .. tags:  training
 .. date: 2013-10-31
+
+Tulemüürid ja virtuaalprivaatvõrgud
+===================================
 
 Käesolev kursus käsitleb tulemüüride ning virtuaalprivaatvõrkude seadistamist.
 Kursuse maht 12 akadeemilist tundi tulemüüride teemal ning 12 akadeemilist tundi
